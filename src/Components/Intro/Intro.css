@@ -11,11 +11,15 @@
     flex: 1;
     flex-direction: column;
     gap: 2rem;
+    margin-left: 20px;
 }
 
 .i-name{
 display:flex;
 flex-direction: column;
+gap: 0.25rem;
+
+
 }
 
 
@@ -41,8 +45,8 @@ flex-direction: column;
 }
 
 .i-button {
-   width: 6em;
-   height: 2em;
+   width: 7em;
+   height: 3em;
 }
 
 /*icons*/
@@ -52,9 +56,9 @@ flex-direction: column;
     gap:0rem;
 }
 
-.i-icons>*{
-    transform:scale(0.5);
-}
+.i-icons > * {
+    transform: scale(0.5);
+  }
 .i-icons>*:hover{
     cursor: pointer;
 }
@@ -89,9 +93,9 @@ flex-direction: column;
 }
 
 .i-right>:nth-child(4){
-    transform:scale(0.6);
-    left:-24%;
-    top:-19%;
+    transform: scale(0.62);
+    top: -19%;
+    left: -24%;
     border-radius: 50%;
     padding: 0;
 
