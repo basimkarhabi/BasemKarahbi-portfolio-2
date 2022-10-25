@@ -12,6 +12,10 @@ import {themeContext} from './Context'
 import { useContext } from "react";
 
 
+
+
+
+
 function App() {
   const theme = useContext(themeContext);
   return (
@@ -25,7 +29,9 @@ function App() {
      <Works/>
     <Portfolio />
     <Testimonials />
+    <Contact />
      <Footer />
+   
     </div> 
   );
 }

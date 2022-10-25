@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext, useRef, useState } from "react";
 import './Contact.css'
 import emailjs from "@emailjs/browser";
 import { themeContext } from "../../Context";
@@ -8,16 +8,17 @@ const Contact=()=> {
     const darkMode = theme.state.darkMode;
     const form = useRef();
     const [done, setDone] = useState(false)
+
     const sendEmail = (e) => {
-      e.preventDefault();
-  
-      emailjs
-        .sendForm(
-          "service_zvtwdrd",
-          "template_20o9wml",
-          form.current,
-          "peEiwnQMp9wO3xBui"
-        )
+    e.preventDefault();
+
+        emailjs
+          .sendForm(
+            "service_3319rwi",
+            "template_hhkza7v",
+            form.current,
+            "peEiwnQMp9wO3xBui"
+          )
         .then(
           (result) => {
             console.log(result.text);
@@ -50,7 +51,7 @@ const Contact=()=> {
    {/* right side form */}
    <div className="c-right">
         <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name="user_name" className="user"  placeholder="Name"/>
+        <input type="text" name="user_name" className="user"  placeholder="Name"/>
           <input type="email" name="user_email" className="user" placeholder="Email"/>
           <textarea name="message" className="user" placeholder="Message"/>
           <input type="submit" value="Send" className="button"/>
