@@ -7,7 +7,8 @@ import Humble from "../../img/humble.png";
 import Resume from './CV_Basem_karahbi.pdf'
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
-
+//import {link} from 'react-scroll'
+ 
 function Services() {
     // context
   const theme = useContext(themeContext);
@@ -20,7 +21,7 @@ function Services() {
   };
 
   return (
-    <div className="services" id="services">
+    <div className="services" id="Services">
         {/**Left Side ************************************************************/}
             <div className="awesome">
                     {/* dark mode */}
@@ -75,7 +76,9 @@ function Services() {
                         heading={'UI/Ux'}
                         detail = {"Html , Css , JaveScript, React.js,Nood.js"}  
                     />
-                </motion.div>    
+                </motion.div>   
+
+
                 <div
                     className="blur s-blur2"
                     style={{ background: "var(--purple)" }}

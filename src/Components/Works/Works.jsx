@@ -20,7 +20,7 @@ function Works() {
 
 
   return (
-    <div className="works" id="works" >
+    <div className="works" >
       {/**Left Side **/}
       <div className="w-left">
         <div className="awesome">
@@ -56,28 +56,26 @@ function Works() {
           transition={{ duration: 3.5, type: "spring" }}
           className="w-mainCircle"
         >
-          <div className="w-secCircle">
-            <img src={Upwork} alt="" />
-          </div>
-          <div className="w-secCircle">
-            <img src={Fiverr } alt="Fiverr " />
-          </div>
-          <div className="w-secCircle">
-            <img src={Amazon} alt="" />
-          </div>{" "}
-          <div className="w-secCircle">
-            <img src={Shopify} alt="" />
-          </div>
-          <div className="w-secCircle">
-            <img src={Facebook} alt="" />
-          </div>
+            <div className="w-secCircle">
+              <img src={Upwork} alt="" />
+            </div>
+            <div className="w-secCircle">
+              <img src={Fiverr } alt="Fiverr " />
+            </div>
+            <div className="w-secCircle">
+              <img src={Amazon} alt="" />
+            </div>{" "}
+            <div className="w-secCircle">
+              <img src={Shopify} alt="" />
+            </div>
+            <div className="w-secCircle">
+              <img src={Facebook} alt="" />
+            </div>
         </motion.div>
         {/* background Circles */}
         <div className="w-backCircle blueCircle"></div>
         <div className="w-backCircle yellowCircle"></div>
       </div>
-   
-
     </div>
   )
 }

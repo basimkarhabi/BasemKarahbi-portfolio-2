@@ -127,7 +127,7 @@ gap: 0.25rem;
     filter: blur(72px);
   }
   @media screen and (max-width: 480px) {
-    .Intro {
+    .intro {
       flex-direction: column;
       gap: 7rem;
       height: 64rem;
@@ -141,7 +141,7 @@ gap: 0.25rem;
       display: none;
     }
     .floating-div:nth-of-type(1){
-      /* display: none; */
+       display: none; 
       top: -7rem !important;;
     }
   }

@@ -37,7 +37,7 @@ const Testimonials= ()=> {
 
 
   return (
-<div className="t-wrapper">
+<div className="t-wrapper" id="Testimnials">
     <div className="t-heading">
         <span>Clints always get</span>
         <span>Exceptional work</span>

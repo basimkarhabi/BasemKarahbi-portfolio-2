@@ -13,7 +13,7 @@ import FloatinDiv from '../FloatingDiv/FloatingDiv'
 import {themeContext} from '../../Context'
 import { useContext } from "react";
 import { motion } from "framer-motion";
-//import { Link } from "react-scroll";
+import { Link } from "react-scroll";
 
 
 
@@ -34,9 +34,9 @@ function Intro() {
                 <span>Basem Karah bi</span>
                 <span>Frontend devloper </span>
             </div>
-
-            <button className="button i-button">Hier me</button>
-
+            <Link to="contact" smooth={true} spy={true}>
+                <button className="button i-button">Hire me</button>
+            </Link>
             <div className="i-icons">
                 <a href="https://github.com/basimkarhabi">
                         <img src={Github}  alt="github.com/basimkarhabi" /> </a>
@@ -63,6 +63,7 @@ function Intro() {
                   whileInView={{ left: "68%" }}
                   transition={transition}
                   className="floating-div"
+                  style={{top:"-4%", left:"68%"}}
                 >
                   <FloatinDiv img={crown} text1="Web" text2="Developer" />
                 </motion.div>
@@ -72,10 +73,11 @@ function Intro() {
           initial={{ left: "9rem", top: "18rem" }}
           whileInView={{ left: "2rem" }}
           transition={transition}
+          style={{top:"18rem", left:"0"}}
           className="floating-div"
         >
           {/* floatinDiv mein change hy dark mode ka */}
-          <FloatinDiv img={thumbup} text1="Best Design" text2="Award" />
+          <FloatinDiv img={thumbup} text1="Best Design" text2="& Arabic Teatcher" />
         </motion.div>
 
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>

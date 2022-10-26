@@ -74,3 +74,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 yarn add framer-motion v 6.2.4
 
 https://github.com/framer/motion/issues/1447
+
+****************Add  for Link *********************
+yarn add react-scroll
