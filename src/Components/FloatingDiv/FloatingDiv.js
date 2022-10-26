@@ -3,22 +3,22 @@ import './FloatingDiv.css'
 
 
 
-function FloatingDiv({image,txt1,txt2}) {
+function FloatinDiv({img,text1,text2}) {
     
 
   return (
-        <div className="floatingDiv"   >
-            <img  src={image} alt="" />
-            <spn>
-                {txt1}
+        <div className="FloatingDiv"   >
+            <img  src={img} alt="" />
+            <span>
+                {text1}
                 <br/>
-                {txt2}
+                {text2}
 
-            </spn>
+            </span>
         </div>
 
 
     )
 }
 
-export default FloatingDiv
+export default FloatinDiv

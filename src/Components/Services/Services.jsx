@@ -6,66 +6,83 @@ import Glasses from "../../img/glasses.png";
 import Humble from "../../img/humble.png";
 import Resume from './CV_Basem_karahbi.pdf'
 import { themeContext } from "../../Context";
+import { motion } from "framer-motion";
 
 function Services() {
     // context
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
-
-
+  // transition
+  const transition = {
+    duration: 1,
+    type: "spring",
+  };
 
   return (
-<div className="services" id="services">
-    {/**Left Side **/}
-    <div className="awesome">
-         {/* dark mode */}
+    <div className="services" id="services">
+        {/**Left Side ************************************************************/}
+            <div className="awesome">
+                    {/* dark mode */}
 
-        <span style={{ color: darkMode ? "white" : "" }}>My Awasome</span>
-        <span>Services</span>
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            <br/>
-            Adipisci officiis illo cupiditate eaque 
-        </span>
-        <a href={Resume} download>
-        <button className="button s-button">Download CV</button>
-        </a>
-        <div className="blur s-blur1" style={{background:'#ABF1FF94'}}  ></div>  
+                    <span style={{ color: darkMode ? "white" : "" }}>My Awasome</span>
+                    <span>Services</span>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        <br/>
+                        Adipisci officiis illo cupiditate eaque 
+                    </span>
+                    <a href={Resume} download>
+                    <button className="button s-button">Download CV</button>
+                    </a>
+                    <div className="blur s-blur1" style={{background:'#ABF1FF94'}}  ></div>  
 
-    </div>
-{/**Right Side **/}
-<div className="cards"> 
-    <div style={{left:'24rem'}}>
-        {/*first Card*/}
-        <Card 
-            emoji={HeartEmoji}
-            heading={'SAP'}
-            detail = {"SAP HANA2.0 , SAP FIORI , ABAP , SAP UI5 "}  
-        />
-    </div>
-    {/*Secand Card*/}
-    <div style={{left:'4rem',top:'12rem'}}>
-        <Card 
-            emoji={Glasses}
-            heading={'Developer'}
-            detail = {"Html , Css , JaveScript, React.js,Nood.js"}  
-        />
-    </div>
-    {/*3rd Card*/}
-    <div style={{left:'27rem',top:'19rem'}}>
-        <Card 
-            emoji={Humble}
-            heading={'UI/Ux'}
-            detail = {"Html , Css , JaveScript, React.js,Nood.js"}  
-        />
-    </div>    
-    <div
-          className="blur s-blur2"
-          style={{ background: "var(--purple)" }}
-        ></div>
+            </div>
+        {/**Right Side ********************************************************************/}
+            <div className="cards"> 
+                        {/*first Card*********************************************/}
 
-</div>
-</div>  )
+                <motion.div 
+                            initial={{ left: "25rem" }}
+                            whileInView={{ left: "14rem" }}
+                            transition={transition}              >
+                            <Card 
+                                emoji={HeartEmoji}
+                                heading={'SAP'}
+                                detail = {"SAP HANA2.0 , SAP FIORI , ABAP , SAP UI5 "}   />
+                </motion.div>
+                {/********************Secand Card***************************************/}
+                <motion.div 
+                    initial={{ left: "-11rem", top: "12rem" }}
+                    whileInView={{ left: "-4rem" }}
+                    transition={transition}
+                    
+                    >
+                    <Card 
+                        emoji={Glasses}
+                        heading={'Developer'}
+                        detail = {"Html , Css , JaveScript, React.js,Nood.js"}  
+                    />
+                </motion.div>
+
+                {/***************************3rd Card***********************************/}
+                <motion.div 
+                    initial={{ top: "19rem", left: "25rem" }}
+                    whileInView={{ left: "12rem" }}
+                    transition={transition}
+                >
+                    <Card 
+                        emoji={Humble}
+                        heading={'UI/Ux'}
+                        detail = {"Html , Css , JaveScript, React.js,Nood.js"}  
+                    />
+                </motion.div>    
+                <div
+                    className="blur s-blur2"
+                    style={{ background: "var(--purple)" }}
+                    ></div>
+
+            </div>
+    </div>  )
 }
 
 export default Services

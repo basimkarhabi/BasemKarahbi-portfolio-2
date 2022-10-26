@@ -8,12 +8,10 @@ import Vector2 from "../../img/Vector2.png";
 import boy from "../../img/boy.png";
 import glassesimoji from "../../img/glassesimoji.png";
 import thumbup from "../../img/thumbup.png";
-import Crown from "../../img/crown.png";
-import FloatingDiv from '../FloatingDiv/FloatingDiv'
+import crown from "../../img/crown.png";
+import FloatinDiv from '../FloatingDiv/FloatingDiv'
 import {themeContext} from '../../Context'
 import { useContext } from "react";
-//import { motion } from "framer-motion";
-//import {AnimatePresence, motion} from "framer-motion/dist/framer-motion";
 import { motion } from "framer-motion";
 //import { Link } from "react-scroll";
 
@@ -60,24 +58,24 @@ function Intro() {
                     transition={transition}                    
         />
 
-<motion.div
-          initial={{ top: "-4%", left: "74%" }}
-          whileInView={{ left: "68%" }}
-          transition={transition}
-          className="floating-div"
-        >
-          <FloatingDiv img={Crown} text1="Web" text2="Developer" />
-        </motion.div>
+        <motion.div
+                  initial={{ top: "-4%", left: "74%" }}
+                  whileInView={{ left: "68%" }}
+                  transition={transition}
+                  className="floating-div"
+                >
+                  <FloatinDiv img={crown} text1="Web" text2="Developer" />
+                </motion.div>
 
         {/* animation */}
         <motion.div
           initial={{ left: "9rem", top: "18rem" }}
-          whileInView={{ left: "0rem" }}
+          whileInView={{ left: "2rem" }}
           transition={transition}
           className="floating-div"
         >
           {/* floatinDiv mein change hy dark mode ka */}
-          <FloatingDiv img={thumbup} text1="Best Design" text2="Award" />
+          <FloatinDiv img={thumbup} text1="Best Design" text2="Award" />
         </motion.div>
 
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
