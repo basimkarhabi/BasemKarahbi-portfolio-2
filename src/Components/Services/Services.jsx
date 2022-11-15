@@ -28,9 +28,9 @@ function Services() {
 
                     <span style={{ color: darkMode ? "white" : "" }}>My Awasome</span>
                     <span>Services</span>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    <span>Looking for a new challenge in web and software development as 
                         <br/>
-                        Adipisci officiis illo cupiditate eaque 
+                        full stack developer with JavaScript and React ... in a new World. 
                     </span>
                     <a href={Resume} download>
                     <button className="button s-button">Download CV</button>

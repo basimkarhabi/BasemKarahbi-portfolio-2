@@ -77,3 +77,5 @@ https://github.com/framer/motion/issues/1447
 
 ****************Add  for Link *********************
 yarn add react-scroll
+
+

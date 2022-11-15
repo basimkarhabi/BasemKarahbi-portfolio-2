@@ -88,8 +88,10 @@ gap: 0.25rem;
 }
 
 .i-right>:nth-child(3){
-    transform:scale(1.4);
-    left:28%;
+    transform:scale(0.4);
+    left:-10%;
+    width:82%;
+    top:-40%;
 }
 
 .i-right>:nth-child(4){
@@ -137,6 +139,17 @@ gap: 0.25rem;
       transform: scale(0.8);
       left: -3rem;
     }
+    .i-right {
+        transform: scale(0.8);
+        left: -3rem;
+      }
+
+    .i-right>:nth-child(3){
+        top:-15rem;
+        width:180%;
+        left:-3rem;
+      }
+
     .i-right .blur {
       display: none;
     }

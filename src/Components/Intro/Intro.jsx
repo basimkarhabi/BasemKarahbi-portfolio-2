@@ -15,24 +15,20 @@ import { useContext } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 
-
-
 function Intro() {
      // Transition
-    const transition = { duration: 2, type: "spring" };
- 
+    const transition = { duration: 2, type: "spring" }; 
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
 
   return (
     <div className="intro" id="Intro">
         {/* right image side */}
-
         <div className="i-left">
             <div className="i-name">
                 <span style={{ color: darkMode ? "white" : "" }} >Hi! I Am</span>
                 <span>Basem Karah bi</span>
-                <span>Frontend devloper </span>
+                <span>Fullstack devloper </span>
             </div>
             <Link to="contact" smooth={true} spy={true}>
                 <button className="button i-button">Hire me</button>
@@ -42,14 +38,14 @@ function Intro() {
                         <img src={Github}  alt="github.com/basimkarhabi" /> </a>
                     <a href="https://www.linkedin.com/in/mohammad-basem-karha-bi-b1a14611a">
                         <img src={LinkedIn}  alt=""    /> </a>
-                <img src={Instagram}  alt=""    />
+                <img src={Instagram}  alt="Instagram"    />
             </div>
         </div>
             {/* right image side */}
         <div className="i-right">
             <img src={Vector1} alt="Vector1" />
             <img src={Vector2} alt="Vector2" />
-            <img src={boy} alt="boy" /> 
+            <img src={boy} alt="boy" />
             <motion.img 
                     src={glassesimoji} 
                     alt="glassesimoji" 
